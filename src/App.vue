@@ -1,28 +1,43 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app"   >
+    <my-head></my-head>
+    <my-aside></my-aside>
+    <my-main></my-main>
+    <MyFoot></MyFoot>
+    <my-login></my-login>
+    <PersonalLogin></PersonalLogin>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyHead from "@/components/MyHead";
+import MyAside from "@/components/MyAside";
+import MyFoot from "./components/MyFoot";
+import MyMain from "./components/MyMain";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    MyHead,
+    MyAside,
+    MyFoot,
+    MyMain,
+  },
+  
+};
 </script>
 
-<style>
+<style lang="less" scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  min-width: 1024px;
+  min-height: 685px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  //resize: both;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 </style>
