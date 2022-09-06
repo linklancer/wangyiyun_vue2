@@ -73,7 +73,7 @@ export default {
        searchList: {
         keyword: '',
         limit: 60,
-        offset:2,
+        offset:0,
         type: 1, //默认为单曲
       },
      // keyword: "",

@@ -1,5 +1,6 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
+  publicPath:'./',
   transpileDependencies: true,
   pages:{
     index:{
@@ -13,6 +14,7 @@ module.exports = defineConfig({
   //代理跨域
   devServer:{
     //请求服务器地址
-    proxy:'http://localhost:3000'
-  }
+    proxy:'http://43.143.99.21:3000/',
+         
+      }
 })

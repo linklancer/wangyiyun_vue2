@@ -11,7 +11,7 @@ const state = {
   LyRic:'',//歌词的ref
   Swiper:'',//转盘上面的ref
   UlList:'',//歌词容器ref
-  ListCon:'',//每句歌词
+ // ListCon:'',//每句歌词
   showdeg:0 + 'deg',//指针旋转度数
   lyricIndex:0, //歌词索引
   listen: "bofang1",//播放暂停图标

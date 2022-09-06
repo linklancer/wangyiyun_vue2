@@ -14,6 +14,7 @@ const requests = axios.create({
     //基础路径，发请求的时候，路径当中会出现api
     baseURL:'',
     timeout:5000,
+    withCredentials:true , //允许请求携带cooike
 })
 //请求拦截器
 requests.interceptors.request.use((config) =>{

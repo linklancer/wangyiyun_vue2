@@ -30,6 +30,7 @@ VueRouter.prototype.replace = function(location,resolve,reject){
 }
 //对外暴露路由信息
 let router =  new VueRouter({
+    mode:'history',
     routes,
 })
 

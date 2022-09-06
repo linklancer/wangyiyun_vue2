@@ -70,16 +70,15 @@ export default {
     this.$store.state.music.isshow= true;
     this.$store.state.music.mask= this.$refs.rotate
     this.$store.state.music.LyRic = this.$refs.lyrics
-   
    //设置转盘转动
     this.$store.state.music.mask.style.animationPlayState = 'running'
    //console.log(this.$refs.offetHeight)
    //存储指针的ref到vuex里面
      this.$store.state.music.Swiper =  this.$refs.swiper
-     this.$nextTick(function(){
+    /* this.$nextTick(function(){
       this.$store.state.music.ListCon = this.$refs.ListContainer
       //console.log(this.$refs.ListContainer)
-     })
+     })*/
   },
   computed:{
     //获取经过数据处理的歌词

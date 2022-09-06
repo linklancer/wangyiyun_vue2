@@ -53,7 +53,7 @@
 
 <script>
 import MyAudio from "./MyAudio";
-import { mapState } from "vuex";
+import { mapState,mapGetters } from "vuex";
 export default {
   name: "MyFoot",
   components: { MyAudio },
@@ -69,7 +69,7 @@ export default {
         return state.music.SongList;
       },
     }),
-
+     ...mapGetters(["newLyric"]),
     songname() {
       if (!(JSON.stringify(this.Songlist) == "{}")) {
         return this.Songlist.name;
@@ -110,7 +110,6 @@ export default {
       this.$router.push({
         path: "/detail",
       })
-    
     },
     isactive() {
       if (this.$route.path == "/detail") {

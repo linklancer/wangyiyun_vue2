@@ -48,13 +48,13 @@ const getters ={
     //推荐歌单区的数据
     Creatives(state){
         if(state.blockdata.blocks){
-            return state.blockdata.blocks[1].creatives || []
+            return state.blockdata.blocks[0].creatives || state.blockdata.blocks[1].creatives
         } 
     },
     //热门播客的数据
     Hotplaylist(state){
         if(state.blockdata.blocks){
-            return state.blockdata.blocks[2].creatives || []
+            return state.blockdata.blocks[2].creatives || state.blockdata.blocks[2].creatives[1]
         } 
     }
    
